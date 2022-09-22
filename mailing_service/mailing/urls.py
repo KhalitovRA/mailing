@@ -12,6 +12,4 @@ urlpatterns = format_suffix_patterns([
     path('mailing/', views.MailingViewSet.as_view({'post': 'create'})),
     path('mailing/<int:pk>/', views.MailingAPIUpdate.as_view()),
     path('mailingdelete/<int:pk>/', views.MailingAPIDestroy.as_view()),
-    # path('mailings/info', views.MailingViewSet.as_view({'get': 'info'})),
-    # path('mailings/fullinfo', views.MailingViewSet.as_view({'get': 'fullinfo'})),
 ])
